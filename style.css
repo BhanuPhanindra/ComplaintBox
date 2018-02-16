@@ -1,0 +1,412 @@
+/* Header of Page */
+#topbar
+{
+	background-color: #333333;
+	color: white;
+	height: 60px;
+	text-align: right;
+	padding-top:15px;
+	font-family: "Lucida Console", Monaco, monospace;
+	box-shadow: 2px 2px 4px #000000;
+	position: fixed;
+	overflow: hidden;
+	top:0;
+	width:100%;
+	z-index: 2;
+}
+
+#complaintHead
+{
+	margin-right: 40%;
+}
+
+.inline
+{
+	display: inline-block;
+}
+
+.searchText
+{
+	margin-left: 200px;
+	margin-right: 120px;
+	height: 25px;
+	width: 180px;
+	border-radius: 10px;
+	border: 0;
+	padding-left: 28px;
+	background-image: url('search.png');
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 5px 5px;
+}
+
+
+h1
+{
+	margin: 0px;	
+}
+
+
+/* Body */
+body
+{
+	margin: 0px;
+	background-image: url(background.jpg);
+	background-size: cover;
+}
+
+
+/* Login Form */
+input[type=text]:not(.postboxTitle):not(.searchText)
+{
+	width:20%;
+	height:30px;
+	font-size: 18px;
+	color:  #404040;
+	font-weight: 600;
+	padding-left:10px;
+	border-radius: 4px;
+	border: 0px;
+}
+input[type=password]
+{
+	width:20%;
+	height:30px;
+	font-size: 18px;
+	color:  #005ce6;
+	font-weight: 600;
+	padding-left:10px;
+	border-radius: 4px;
+	border: 0px;
+}
+
+input[type=submit]
+{
+	height: 35px;
+	width: 70px;
+	border-radius: 20px;
+	background-color: #008CBA;
+	border: 0px ;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+input[type=submit]:hover
+{
+	background-color: white;
+	border: 3px solid #008CBA;
+	font-size: 20px;
+}
+
+#form
+{
+	margin-top:160px;
+	margin-left:300px;
+}
+
+    /*Login heading in login page */
+.heading
+{
+	color: #0059b3;
+	font-family: "Lucida Console", Monaco, monospace;	
+}
+	/*Caption login form */
+h2:not(.PostHeading)
+{
+	color: #604020;
+	font-family: "Lucida Console", Monaco, monospace;	
+
+}
+
+input:focus
+{
+	border-color: #0059b3;
+}
+
+/* Navigation Bar */
+ul:not(.postlist) 
+{
+    list-style-type: none;
+    margin: 0;
+	margin-top:0px;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+	text-align:center;
+	font-size: 18px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.a_class
+{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active
+{
+	display: block;
+	padding: 8px 16px;
+    background-color: #008CBA;
+    color: white;
+	text-decoration: none;
+}
+
+.a_class:hover
+{
+    background-color: #555555;
+    color: white;
+}
+
+#post
+{
+	background-color: #008CBA;
+	margin-top: 40px;
+	height: 36px;
+	width: 64px;
+	border-radius: 4px;
+	border: 0;
+	color: white;
+}
+#post:hover
+{
+	background-color: #007399;
+}
+
+.chPass
+{
+	margin-top: 75%;
+	font-family:arial;
+	font-size: 13px;
+}
+
+.changePassword
+{
+	text-decoration: none;
+	color:black;
+}
+
+.changePassword:hover
+{
+	text-decoration: underline;
+}
+
+#logout
+{
+	background-color: #111111;
+	color: white;
+	height: 40px;
+	width: 80px;
+	margin-top: 20px;
+	border: 0;
+}
+
+
+/* List of Posts on right */
+.postlist
+{
+	margin-left: 25%;
+	list-style-type: none;
+	width: 70%;
+	background-color: #000000;
+	opacity: .7;
+	padding: 20px;
+	margin-top:80px;
+}
+
+	/* Heading of a post */
+.PostHeading
+{
+	color: white;
+	margin:0px;
+	font-family: arial;
+	display: block;
+}
+
+.PostHeading:hover
+{
+	text-decoration: underline;
+}
+
+
+/* Modal */
+#mymodal
+{
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	z-index: 3;
+	display: none;
+	position: fixed;
+	top: 0;
+}
+
+.modal
+{
+	position: absolute;
+	background-color: #008cba;
+	width: 40%;
+	height: 340px;
+	padding: 25px;
+	overflow: auto;
+	border: 4px solid white;
+	border-radius: 8px;
+	opacity: 1;
+	top: 20%;
+	left: 30%;
+}
+
+.postboxTitle
+{
+	width: 90%;
+	height:30px;
+	font-size: 20px;
+	border-radius: 4px;
+	padding-left: 10px;
+}
+
+
+/* Box to make new Posts */
+.postboxText
+{
+	width: 90%;
+	height:200px;
+	font-family: arial;
+	font-size: 16px;
+	border-radius: 4px;
+	padding-left: 6px;
+	resize: none;
+	white-space: pre;
+}
+
+.postboxHead
+{
+	color: #262626;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+	/*Post button */
+#actualPost
+{
+	position: absolute;
+	right: 15%;
+	bottom: 10px;
+	background-color: #009933;
+	height: 36px;
+	width: 64px;
+	border-radius: 4px;
+	border: 0;
+	color: white;
+	font-weight: bold;
+}
+#actualPost:hover
+{
+	background-color: #006622;
+}
+
+
+/*Next Button */
+#nextButton
+{
+	margin-top: 0;
+	height: 40px;
+	width: 80px;
+	margin-bottom: 10px;
+	background-color: #111111;
+	border: 0;
+	color: white;
+}
+
+
+#nextButton:hover
+{
+	color: #008CBA;
+	font-weight: bold;
+}
+
+/*Previous Button */
+#prevButton
+{
+	margin-top: 0;
+	margin-left: 82%;
+	height: 40px;
+	width: 80px;
+	margin-bottom: 10px;
+	background-color: #111111;
+	border: 0;
+	color: white;
+	visibility: hidden;
+}
+
+#prevButton:hover
+{
+	color: #008CBA;
+	font-weight: bold;
+}
+
+/* Text in likes, dislikes and views */
+.views
+{
+	color: white;
+	background-color: #333333;
+	border-radius: 6px;
+	margin-right: 8px;
+	margin-left: 8px;
+	padding: 6px;
+	margin-top: 10px;
+	font-family: arial;
+	font-weight: bold;
+}
+
+/*Icons in likes, dislikes and views and also logout*/
+i
+{
+	vertical-align: middle;
+	margin-right: 4px;
+	color: white;
+}
+
+.like
+{
+	color: #008CBA;  /* Blue like button and text */
+}
+
+.dislike
+{
+	color: #ff1a1a;  /* Red like button and text */
+}
+
+/*Username of the OP */
+.userspan
+{
+	color: white;
+	font-size: 14px;
+	font-family: arial;
+}
+
+/* Date of Posting */
+.date
+{
+	position: absolute;
+	right:10%;
+	color:white;
+	font-size: 14px;
+	font-family: arial;
+}
+
+.postLink
+{
+	text-decoration: none;
+	color: white;
+}
+.postLink:hover
+{
+	text-decoration: underline;
+}
+

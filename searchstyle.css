@@ -1,0 +1,141 @@
+/* Header of Page */
+#topbar
+{
+	background-color: #333333;
+	color: white;
+	height: 60px;
+	text-align: right;
+	padding-top:15px;
+	font-family: "Lucida Console", Monaco, monospace;
+	box-shadow: 2px 2px 4px #000000;
+	position: fixed;
+	overflow: hidden;
+	top:0;
+	width:100%;
+	z-index: 2;
+}
+
+.goHomeLink
+{
+	text-decoration: none;
+	color: white;
+}
+
+h1
+{
+	margin: 0px;	
+}
+
+.inline
+{
+	display: inline-block;
+}
+
+.searchText
+{
+	margin-left: 200px;
+	margin-right: 120px;
+	height: 25px;
+	width: 180px;
+	border-radius: 10px;
+	border: 0;
+	padding-left: 28px;
+	background-image: url('search.png');
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 5px 5px;
+}
+
+/* Body */
+body
+{
+	margin: 0px;
+	background-image: url(background.jpg);
+	background-size: cover;
+}
+
+.postlist
+{
+	margin-left: 14%;
+	list-style-type: none;
+	width: 70%;
+	background-color: #000000;
+	opacity: .7;
+	padding: 20px;
+	margin-top:80px;
+}
+
+	/* Heading of a post */
+.PostHeading
+{
+	color: white;
+	margin:0px;
+	font-family: arial;
+	display: block;
+}
+
+
+/* Text in likes, dislikes and views */
+.views
+{
+	color: white;
+	background-color: #333333;
+	border-radius: 6px;
+	margin-right: 8px;
+	margin-left: 8px;
+	padding: 6px;
+	margin-top: 10px;
+	font-family: arial;
+	font-weight: bold;
+}
+
+/*Icons in likes, dislikes and views and also logout*/
+i
+{
+	vertical-align: middle;
+	margin-right: 4px;
+	color: white;
+}
+
+.like
+{
+	color: #008CBA;  /* Blue like button and text */
+}
+
+.dislike
+{
+	color: #ff1a1a;  /* Red like button and text */
+}
+
+/*Username of the OP */
+.userspan
+{
+	color: white;
+	font-size: 14px;
+	font-family: arial;
+}
+
+/* Date of Posting */
+.date
+{
+	margin-left: 74%;
+	color:white;
+	font-size: 14px;
+	font-family: arial;
+}
+
+/*No results text */
+.resultSearch
+{
+	color: white;
+}
+
+.postLink
+{
+	text-decoration: none;
+	color: white;
+}
+.postLink:hover
+{
+	text-decoration: underline;
+}
