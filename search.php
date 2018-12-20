@@ -1,3 +1,5 @@
+//This php file is used for searching a complaint
+
 <?php
 
 //Connecting to database and also checking for users session
